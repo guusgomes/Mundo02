@@ -9,7 +9,7 @@ cores = {'limpa':'\033[m',
          'magenta':'\033[1;35m',
          'ciano':'\033[1;36m'}
 
-print(f'{cores['titulo']}', '=' * 6, 'DESAFIO 44', '=' * 6, f'{cores['limpa']}')
+print(f'{cores['titulo']}', '=' * 6, 'DESAFIO 45', '=' * 6, f'{cores['limpa']}')
 
 usuario = int(input(f'''      {cores['vermelho']}JOKENPÔ!{cores['limpa']}
       {cores['azul']}1{cores['limpa']} - {cores['azul']}Pedra{cores['limpa']};
