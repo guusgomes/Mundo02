@@ -14,9 +14,9 @@ if idade <= 9:
     print(f'Você tem {cores['amarelo']}{idade} anos{cores['limpa']}. {cores['azul']}MIRIM{cores['limpa']}, até {cores['amarelo']}9 anos{cores['limpa']}.')
 elif idade > 9 and idade <= 14:
     print(f'Você tem {cores['amarelo']}{idade} anos{cores['limpa']}. {cores['azul']}INFANTIL{cores['limpa']}, {cores['amarelo']}10{cores['limpa']} aos {cores['amarelo']}14 anos{cores['limpa']}.')
-elif idade > 14 and idade <= 19:
+elif idade <= 19:
     print(f'Você tem {cores['amarelo']}{idade} anos{cores['limpa']}. {cores['azul']}JUNIOR{cores['limpa']}, {cores['amarelo']}15{cores['limpa']} aos {cores['amarelo']}19 anos{cores['limpa']}.')
-elif idade == 20:
-    print(f'Você tem {cores['amarelo']}{idade} anos{cores['limpa']}. {cores['azul']}SÊNIOR{cores['limpa']}, {cores['amarelo']}20 anos{cores['limpa']}.')
+elif idade <= 25:
+    print(f'Você tem {cores['amarelo']}{idade} anos{cores['limpa']}. {cores['azul']}SÊNIOR{cores['limpa']}, {cores['amarelo']}20{cores['limpa']} aos {cores['amarelo']}25 anos{cores['limpa']}.')
 else:
-    print(f'Você tem {cores['amarelo']}{idade} anos{cores['limpa']}. {cores['azul']}MASTER{cores['limpa']}, a partir de {cores['amarelo']}21 anos{cores['limpa']}.')
+    print(f'Você tem {cores['amarelo']}{idade} anos{cores['limpa']}. {cores['azul']}MASTER{cores['limpa']}, a partir de {cores['amarelo']}26 anos{cores['limpa']}.')
