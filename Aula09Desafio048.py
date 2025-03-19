@@ -6,8 +6,15 @@ cores = {'limpa':'\033[m',
 print(f'{cores['titulo']}', '=' * 15, 'DESAFIO 48', '=' * 15, f'{cores['limpa']}')
 
 s = 0
+cont = 0
 
-for c in range(3, 500, 6):
-    s = c + s
+#for c in range(3, 500, 6):
+#   s = s + c
+#   cont = cont + 1
 
-print(f'A {cores['azul']}soma{cores['limpa']} dos números {cores['amarelo']}ímpares{cores['limpa']} e {cores['amarelo']}múltiplos de 3{cores['limpa']} é: {cores['azul']}{s}{cores['limpa']}.')
+for c in range(1, 501, 2):
+    if c % 3 == 0:
+        s = s + c
+        cont = cont + 1
+
+print(f'A {cores['azul']}soma{cores['limpa']} dos {cores['amarelo']}{cont}{cores['limpa']} números {cores['amarelo']}ímpares{cores['limpa']} e {cores['amarelo']}múltiplos de 3{cores['limpa']} é: {cores['azul']}{s}{cores['limpa']}.')

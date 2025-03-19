@@ -7,6 +7,9 @@ print(f'{cores['titulo']}', '=' * 15, 'DESAFIO 51', '=' * 15, f'{cores['limpa']}
 
 pt = int(input('Digite o primeiro termo: '))
 r = int(input('Digite a razão: '))
+dt = pt + (10 - 1) * r
 
-for c in range(pt, (pt * r) + pt, r):
-    print(c)
+for c in range(pt, dt + 1, r):
+    print(c, end=' - ')
+
+print('FIM')

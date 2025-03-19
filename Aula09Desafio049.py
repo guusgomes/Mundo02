@@ -9,4 +9,4 @@ print(f'{cores['azul']}TABUADA{cores['limpa']}')
 n = int(input('Digite um número inteiro: '))
 
 for c in range(1, 11):
-    print(f'{cores['amarelo']}{n}{cores['limpa']} X {cores['amarelo']}{c:>2}{cores['limpa']} = {cores['azul']}{n * c:>3}{cores['limpa']}')
+    print(f'{cores['amarelo']}{n}{cores['limpa']} X {cores['amarelo']}{c:2}{cores['limpa']} = {cores['azul']}{n * c:3}{cores['limpa']}')

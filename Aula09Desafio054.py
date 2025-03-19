@@ -11,13 +11,13 @@ anoatual = date.today().year
 menores = 0
 maiores = 0
 
-for c in range(0, 7):
+for c in range(1, 8):
     ano = int(input('Digite seu ano de nascimento: '))
     idade = anoatual - ano
-    if idade < 18:
-        menores = menores + 1
-    else:
+    if idade >= 18:
         maiores = maiores + 1
+    else:
+        menores = menores + 1
 
 print(f'{cores['vermelho']}{menores} MENORES{cores['limpa']} de idade.')
 print(f'{cores['verde']}{maiores} MAIORES{cores['limpa']} de idade.')
