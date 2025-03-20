@@ -1,33 +1,31 @@
-cores = {'limpa':'\033[m',
-         'titulo':'\033[1;31;47m',
-         'verde':'\033[1;32m',
-         'vermelho':'\033[1;31m',
-         'amarelo':'\033[1;33m',
-         'azul':'\033[1;34m',
-         'magenta':'\033[1;35m',
-         'ciano':'\033[1;36m'}
+crs = {'lp':'\033[m',
+       'tt':'\033[1;31;47m',
+       'vd':'\033[1;32m',
+       'vm':'\033[1;31m',
+       'am':'\033[1;33m',
+       'az':'\033[1;34m'}
 
-print(f'{cores['titulo']}', '=' * 15, 'DESAFIO 61', '=' * 15, f'{cores['limpa']}')
+print(f'{crs['tt']}', '=' * 15, 'DESAFIO 62', '=' * 15, f'{crs['lp']}')
 
 pt = int(input('Digite o primeiro termo: '))
 r = int(input('Digite a razão: '))
-dt = pt + (10 - 1) * r
-termos = pt
+termo = pt
+cont = 1
+total = 0
+mais = 10
 
-print(termos, end=' - ')
+while mais != 0:
 
-while termos != dt:
-    termos = termos + r
-    print(termos, end=' - ')
+    total = total + mais
 
-opcao = int(input('Você quer mostrar mais quantos termos? (0 para nenhum): '))
+    while cont <= total:
+        print(f'{crs['vd']}{termo}{crs['lp']} - ', end='')
+        termo = termo + r
+        cont = cont + 1
 
-while opcao != 0:
-    novopt = dt
-    novot = novopt + (opcao - 1) * r 
-    
-    while novopt != novot:
-        termos = termos + r
-        print(termos, end=' - ')
+    print(f'{crs['az']}PAUSA{crs['lp']}')
 
+    mais = int(input('Quantos termos deseja mostrar a mais? '))
 
+print(f'{crs['am']}Progressão finalizada com {crs['vm']}{total}{crs['am']} termos mostrados.{crs['lp']}')
+print(f'{crs['vm']}FIM.{crs['lp']}')
